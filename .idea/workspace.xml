@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITS-Task.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/DB/GeoLite2-Country.mmdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/ApplicationTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dp8sk9rRaXRkPHCHUVu3TlXchM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5463917" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dzikovskiy" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplicationTest.IpCountryTest">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.Application" />
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTest.IpCountryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.ApplicationTest" />
+      <option name="METHOD_NAME" value="IpCountryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApplicationTest.IpCountryTest" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="" />
+      <created>1593110882163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593110882163</updated>
+      <workItem from="1593110885326" duration="6172000" />
+      <workItem from="1593358379552" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="280" y="4" key="#Project_Structure" timestamp="1593116003758">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="#Project_Structure/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116003758" />
+    <state x="918" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1593117458891">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="918" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593117458891" />
+    <state width="1557" height="313" key="GridCell.Tab.0.bottom" timestamp="1593122515133">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="313" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
+    <state width="1557" height="313" key="GridCell.Tab.0.center" timestamp="1593122515133">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="313" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
+    <state width="1557" height="313" key="GridCell.Tab.0.left" timestamp="1593122515132">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="313" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515132" />
+    <state width="1557" height="313" key="GridCell.Tab.0.right" timestamp="1593122515133">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="313" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
+    <state x="280" y="4" key="SettingsEditor" timestamp="1593116712874">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116712874" />
+    <state x="571" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593118968459">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="571" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593118968459" />
+  </component>
+</project>
