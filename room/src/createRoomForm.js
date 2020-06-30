@@ -1,11 +1,12 @@
 import React from 'react';
 import CountrySelect from './countrySelect';
+import { Table, Container, Input, Button, Label, FormGroup, Form } from 'reactstrap';
 
 class CreateRoomForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            countryCode: "",
+            countryCode: "AX",
             roomName: ""
         };
 
@@ -19,22 +20,45 @@ class CreateRoomForm extends React.Component {
         this.setState({ [event.target.name]: event.target.value });
     }
 
-    handleSubmit(event) {
-        alert('Your country code is: ' + this.state.countryCode + ' room name: ' + this.state.roomName);
+    async handleSubmit(event) {
+        let data = {
+            countryCode: this.state.countryCode,
+            name: this.state.roomName
+        }
+        //save room to database with rest api
+        fetch('/api/room', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }).then(response => response.json()).then(data => alert(JSON.stringify(data)));
+        // const json = await response.json();
+        //console.log('Room created:', JSON.stringify(json));
+        //  alert('Your country code is: ' + this.state.countryCode + ' room name: ' + this.state.roomName);
+
         event.preventDefault();
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <CountrySelect value={this.state.countryCode} onChange={this.handleChange} name="countryCode" />
-                <input
-                    name="roomName"
-                    type="text"
-                    value={this.state.roomName}
-                    onChange={this.handleChange} />
-                <input type="submit" value="Submit" />
-            </form>
+            <Container maxWidth="sm" className="my-4">
+                <Form onSubmit={this.handleSubmit}>
+                    <FormGroup className="col-md-3 mb-3">
+                        <CountrySelect value={this.state.countryCode} onChange={this.handleChange} name="countryCode" />
+                        <label className="mt-4">
+                            Название вашей комнаты:
+                              <Input
+                                name="roomName"
+                                type="text"
+                                value={this.state.roomName}
+                                onChange={this.handleChange} required />
+                        </label>
+                        <Button className="mx-4" variant="contained" color="primary" type="submit">Создать команту</Button>
+                    </FormGroup>
+                </Form>
+            </Container>
         );
     }
 }

@@ -3,7 +3,7 @@ import React from 'react';
 //component with list of countries for selector
 export var render = function (props) {
 	return (
-		<select class="form-control" value={props.value} onChange={props.onChange} name={props.name} id="select">
+		<select className="form-control" value={props.value} onChange={props.onChange} name={props.name} id="select">
 			<option value="AX">AALAND ISLANDS</option>
 			<option value="AF">AFGHANISTAN</option>
 			<option value="AL">ALBANIA</option>
