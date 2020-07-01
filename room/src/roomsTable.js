@@ -1,25 +1,34 @@
 import React from 'react';
-import CountrySelect from './countrySelect';
-import { Table, Container, Input, Button, Label, FormGroup, Form } from 'reactstrap';
+import { Button, Container, Table } from 'reactstrap';
+import Bulb from './Bulb';
 
 class RoomsTable extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            Rooms: []
+            Rooms: [],
+            ip: "",
+            isLoggedIn: false,
+            id: 0
         };
 
+        this.enterRoom = this.enterRoom.bind(this);
+        this.getIp = this.getIp.bind(this);
     }
 
-    //update available rooms every x-ms
+    //update available rooms every x-ms froom server
     componentDidMount() {
-        this.interval = setInterval(() => this.tick(), 300);
+        this.interval = setInterval(() => this.tick(), 1000);
+        this.getIp();
     }
 
+    
     componentWillUnmount() {
+        //need for interval to work
         clearInterval(this.interval);
     }
 
+    // getting rooms from server
     async tick() {
         const response = await fetch('/api/rooms');
         const body = await response.json();
@@ -27,8 +36,59 @@ class RoomsTable extends React.Component {
     }
 
 
+    getIp() {
+        fetch('https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572')
+            .then(res => res.json())
+            .then(data => {
+                this.setState({ ip: data.IPv4 })
+            });
+    }
+
+    enterRoom(id) {
+        this.getIp();
+        this.setState({
+            isLoggedIn: false,
+            id: id
+        })
+
+
+        fetch(`/api/check-room-by-ip/${this.state.ip}/${id}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }).then((response) => {
+            let text = response.text;
+            if (response.ok) {
+                try {
+                    const data = JSON.parse(text);
+                    console.log(JSON.stringify(data))
+
+                } catch (err) {
+
+                    console.log("OK");
+                    this.setState({ isLoggedIn: true });
+
+                }
+            } else {
+                this.setState({ isLoggedIn: false });
+                try {
+                    const data = JSON.parse(text);
+                    console.log(JSON.stringify(data))
+
+                } catch (err) {
+                    alert("Вы не из этой страны");
+                }
+
+            }
+        });
+
+    }
+
     render() {
         const { Rooms } = this.state;
+        const isLoggedIn = this.state.isLoggedIn;
 
         let rows =
             Rooms.map(room =>
@@ -36,12 +96,16 @@ class RoomsTable extends React.Component {
                     <td>{room.id}</td>
                     <td>{room.countryCode}</td>
                     <td>{room.name}</td>
-                    <td><Button size="sm" variant="contained" color="primary" >Войти</Button></td>
+                    <td><Button onClick={() => this.enterRoom(room.id)} size="sm" variant="contained" color="primary" >Войти</Button></td>
                 </tr>
             )
 
         return (
             < Container >
+                {isLoggedIn
+                    ? <Bulb value={this.state.id} />
+                    : <div></div>
+                }
                 <h3>Список комнат</h3>
                 <Table className="mt-4">
                     <thead>

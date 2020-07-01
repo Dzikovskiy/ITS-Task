@@ -1,6 +1,7 @@
 import React from 'react';
+import { Button, Container, Form, FormGroup, Input } from 'reactstrap';
 import CountrySelect from './countrySelect';
-import { Table, Container, Input, Button, Label, FormGroup, Form } from 'reactstrap';
+
 
 class CreateRoomForm extends React.Component {
     constructor(props) {
@@ -33,32 +34,34 @@ class CreateRoomForm extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             }
-        }).then(response => response.json()).then(data => alert(JSON.stringify(data)));
-        // const json = await response.json();
-        //console.log('Room created:', JSON.stringify(json));
-        //  alert('Your country code is: ' + this.state.countryCode + ' room name: ' + this.state.roomName);
-
+        });
         event.preventDefault();
     }
 
     render() {
         return (
-            <Container maxWidth="sm" className="my-4">
-                <Form onSubmit={this.handleSubmit}>
-                    <FormGroup className="col-md-3 mb-3">
-                        <CountrySelect value={this.state.countryCode} onChange={this.handleChange} name="countryCode" />
-                        <label className="mt-4">
-                            Название вашей комнаты:
+            <div>
+               
+                <Container maxWidth="sm" className="my-4">
+                    <Form onSubmit={this.handleSubmit}>
+                        <FormGroup className="col-md-3 mb-3">
+                            <CountrySelect value={this.state.countryCode} onChange={this.handleChange} name="countryCode" />
+                            <label className="mt-4">
+                                Название вашей комнаты:
                               <Input
-                                name="roomName"
-                                type="text"
-                                value={this.state.roomName}
-                                onChange={this.handleChange} required />
-                        </label>
-                        <Button className="mx-4" variant="contained" color="primary" type="submit">Создать команту</Button>
-                    </FormGroup>
-                </Form>
-            </Container>
+                                    name="roomName"
+                                    type="text"
+                                    value={this.state.roomName}
+                                    onChange={this.handleChange} required />
+                            </label>
+                            <Button className="mx-4" variant="contained" color="primary" type="submit">Создать команту</Button>
+                        </FormGroup>
+                    </Form>
+
+                </Container>
+        
+            </div>
+
         );
     }
 }
