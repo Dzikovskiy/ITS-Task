@@ -1,8 +1,6 @@
 package dzikovskiy.controller;
 
-import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
-import com.maxmind.geoip2.model.CountryResponse;
 import dzikovskiy.Entities.Room;
 import dzikovskiy.Repository.RoomRepository;
 import dzikovskiy.service.CountryByIpService;
@@ -11,11 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.URISyntaxException;
-import java.net.UnknownHostException;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -29,6 +24,7 @@ public class RoomController {
     @Autowired
     private CountryByIpService countryByIpService;
 
+   //check country of client and of a room that he want to enter, if same return HttpStatus OK
     @GetMapping("/check-room-by-ip/{ip}/{id}")
     public ResponseEntity<?> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
         Optional<Room> room = roomRepository.findById(id);
@@ -37,21 +33,18 @@ public class RoomController {
                 return new ResponseEntity<>(HttpStatus.OK);
             }
         }
-        System.out.println(ip+" "+ id+" "+countryByIpService.getCountryIsoCode(ip));
+        System.out.println(ip + " " + id + " " + countryByIpService.getCountryIsoCode(ip));
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/rooms")
-    public Collection<Room> getRooms() {
-        System.out.println("rooms sent");
-        //System.out.println("Rooms sent");
+    public Collection<Room> getAllRooms() {
         return (Collection<Room>) roomRepository.findAll();
     }
 
     @GetMapping("/room/{id}")
     public ResponseEntity<?> getRoom(@PathVariable Long id) {
         Optional<Room> room = roomRepository.findById(id);
-        System.out.println("room sent");
         return room.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
 

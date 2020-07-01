@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/CountryByIpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/Repository/RoomRepositoryIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/controller/RoomControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/room/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/room/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/Bulb.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/Bulb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/createRoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/createRoomForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/roomsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/roomsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/CountryByIpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/CountryByIpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/ApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dzikovskiy/ApplicationTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,6 +60,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dzikovskiy.Repository" />
+      <recent name="dzikovskiy.controller" />
+      <recent name="dzikovskiy.service" />
       <recent name="dzikovskiy" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -70,32 +73,85 @@
       <recent name="C:\Projects\ITS-Task\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.Application" />
+  <component name="RunManager" selected="JUnit.All in ITS-Task">
+    <configuration name="All in ITS-Task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTest.IpCountryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dzikovskiy.service.*" />
+          <option name="PATTERN" value="dzikovskiy.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.ApplicationTest" />
-      <option name="METHOD_NAME" value="IpCountryTest" />
+      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomControllerTest.checkRoomAvailabilityByIp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
+      <option name="METHOD_NAME" value="checkRoomAvailabilityByIp" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomControllerTest.getAllRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
+      <option name="METHOD_NAME" value="getAllRooms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomControllerTest.getRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
+      <option name="METHOD_NAME" value="getRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
@@ -110,8 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.ApplicationTest.IpCountryTest" />
+        <item itemvalue="JUnit.All in ITS-Task" />
+        <item itemvalue="JUnit.RoomControllerTest.checkRoomAvailabilityByIp" />
+        <item itemvalue="JUnit.RoomControllerTest.getAllRooms" />
+        <item itemvalue="JUnit.RoomControllerTest.getRoom" />
+        <item itemvalue="JUnit.RoomControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +189,7 @@
       <workItem from="1593447959274" duration="1399000" />
       <workItem from="1593449900734" duration="17349000" />
       <workItem from="1593537245459" duration="7930000" />
-      <workItem from="1593592753064" duration="15283000" />
+      <workItem from="1593592753064" duration="22701000" />
     </task>
     <servers />
   </component>
@@ -145,6 +204,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="4" key="#Project_Structure/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116003758" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593632237428">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1593632237428" />
     <state x="881" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1593459133780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -158,25 +221,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593450564698" />
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1593621765644">
+    <state width="1493" height="305" key="GridCell.Tab.0.bottom" timestamp="1593637358710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593621765644" />
+    <state width="1493" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593637358710" />
     <state width="1557" height="313" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1593621765644">
+    <state width="1493" height="305" key="GridCell.Tab.0.center" timestamp="1593637358709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593621765644" />
+    <state width="1493" height="305" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593637358709" />
     <state width="1557" height="313" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1593621765644">
+    <state width="1493" height="305" key="GridCell.Tab.0.left" timestamp="1593637358709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593621765644" />
+    <state width="1493" height="305" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593637358709" />
     <state width="1557" height="313" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515132" />
-    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1593621765644">
+    <state width="1493" height="305" key="GridCell.Tab.0.right" timestamp="1593637358710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593621765644" />
+    <state width="1493" height="305" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593637358710" />
     <state width="1557" height="313" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
     <state width="1493" height="303" key="GridCell.Tab.1.bottom" timestamp="1593550505093">
       <screen x="0" y="0" width="1536" height="824" />
@@ -198,9 +261,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="4" key="SettingsEditor/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116712874" />
-    <state x="571" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593118968459">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="548" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593631799871">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="548" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1593631799871" />
     <state x="571" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593118968459" />
   </component>
 </project>
