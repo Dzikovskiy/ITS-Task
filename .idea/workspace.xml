@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/room/node/node.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/room/node/npm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/room/node/npm.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/room/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/room/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/Bulb.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/Bulb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/createRoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/createRoomForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/roomsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/roomsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/CountryByIpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/CountryByIpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/GeoLite2-Country.mmdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GeoLite2-Country.mmdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/GeoLite2-Country.mmdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dzikovskiy/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dzikovskiy/Application.class" afterDir="false" />
-    </list>
+    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,7 +196,7 @@
       <workItem from="1593592753064" duration="25751000" />
       <workItem from="1593640669692" duration="322000" />
       <workItem from="1593641281119" duration="11369000" />
-      <workItem from="1593687983548" duration="334000" />
+      <workItem from="1593687983548" duration="711000" />
     </task>
     <servers />
   </component>
@@ -247,25 +228,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593450564698" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1593687916543">
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1593688695096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593687916543" />
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
     <state width="1557" height="313" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1593687916543">
+    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1593688695096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593687916543" />
+    <state width="1493" height="279" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
     <state width="1557" height="313" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1593687916542">
+    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1593688695096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593687916542" />
+    <state width="1493" height="279" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
     <state width="1557" height="313" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515132" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1593687916543">
+    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1593688695096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593687916543" />
+    <state width="1493" height="279" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
     <state width="1557" height="313" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
     <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1593687916540">
       <screen x="0" y="0" width="1536" height="824" />
@@ -296,9 +277,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1593640639403" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1593686616187">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1593688332313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593686616187" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593688332313" />
   </component>
 </project>
