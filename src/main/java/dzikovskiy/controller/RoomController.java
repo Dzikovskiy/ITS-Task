@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Optional;
 
+@CrossOrigin(origins = { "http://localhost:3000" })
 @RestController
 @RequestMapping("/api")
 public class RoomController {
@@ -50,6 +51,7 @@ public class RoomController {
 
     }
 
+    //rest controller that accepts bulb state from server and set it to accepted room
     @PutMapping("/room/{id}")
     public ResponseEntity<?> changeBulbState(@RequestBody Room room) {
 

@@ -3,10 +3,15 @@ package dzikovskiy.service;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CountryResponse;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.InetAddress;
 
 @Service
@@ -15,7 +20,13 @@ public class CountryByIpService {
     private DatabaseReader dbReader;
 
     public CountryByIpService() throws IOException {
-        File database = new File("src/main/resources/DB/GeoLite2-Country.mmdb");
+        InputStream stream = new ClassPathResource("/GeoLite2-Country.mmdb").getInputStream();
+        File database = File.createTempFile("GeoLite2-Country-temp", ".mmdb");
+        try {
+            FileUtils.copyInputStreamToFile(stream, database);
+        } finally {
+            IOUtils.closeQuietly(stream);
+        }
         dbReader = new DatabaseReader.Builder(database).build();
     }
 

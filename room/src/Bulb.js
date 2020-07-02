@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container } from 'reactstrap';
 import './Bulb.css';
 
-
+// component for displaying bulb state 
 class Bulb extends React.Component {
   constructor(props) {
     super(props);

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Form, FormGroup, Input } from 'reactstrap';
 import CountrySelect from './countrySelect';
 
-
+// component with form for creating new room 
 class CreateRoomForm extends React.Component {
     constructor(props) {
         super(props);

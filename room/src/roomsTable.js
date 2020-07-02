@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Container, Table } from 'reactstrap';
 import Bulb from './Bulb';
 
+
+// component for displaying created rooms
 class RoomsTable extends React.Component {
     constructor(props) {
         super(props);
