@@ -5,7 +5,7 @@ All rooms is saving to database and every room state change shown in real time.
 
 ### How to run app
 
-* Download ITS-Task-1.0-SNAPSHOT.jar
+* Download ITS-Task-1.0-SNAPSHOT.jar from **target** folder
 * In terminal change working directory with **cd**
 * Enter **java -jar ITS-Task-1.0-SNAPSHOT.jar** 
 
