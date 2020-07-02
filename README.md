@@ -3,6 +3,8 @@
  
 All rooms is saving to database and every room state change shown in real time.
 
+Link to demo: https://rooms-bulb.herokuapp.com
+
 ### How to run app
 
 * Download ITS-Task-1.0-SNAPSHOT.jar from **target** folder
