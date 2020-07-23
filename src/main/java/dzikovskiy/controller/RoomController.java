@@ -1,8 +1,8 @@
 package dzikovskiy.controller;
 
 import com.maxmind.geoip2.exception.GeoIp2Exception;
-import dzikovskiy.Entities.Room;
-import dzikovskiy.Repository.RoomRepository;
+import dzikovskiy.entities.Room;
+import dzikovskiy.repository.RoomRepository;
 import dzikovskiy.service.CountryByIpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

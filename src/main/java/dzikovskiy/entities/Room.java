@@ -1,4 +1,4 @@
-package dzikovskiy.Entities;
+package dzikovskiy.entities;
 
 import javax.persistence.*;
 
