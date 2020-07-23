@@ -1,6 +1,6 @@
-package dzikovskiy.Repository;
+package dzikovskiy.repository;
 
-import dzikovskiy.Entities.Room;
+import dzikovskiy.entities.Room;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
