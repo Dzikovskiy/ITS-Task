@@ -14,7 +14,7 @@ import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Optional;
 
-@CrossOrigin(origins = { "http://localhost:3000" })
+@CrossOrigin(origins = {"http://localhost:3000"})
 @RestController
 @RequestMapping("/api")
 public class RoomController {
@@ -25,7 +25,7 @@ public class RoomController {
     @Autowired
     private CountryByIpService countryByIpService;
 
-   //check country of client and of a room that he want to enter, if same return HttpStatus OK
+    //check country of client and of a room that he want to enter, if same return HttpStatus OK
     @GetMapping("/check-room-by-ip/{ip}/{id}")
     public ResponseEntity<?> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
         Optional<Room> room = roomRepository.findById(id);

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ITS-Task.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/180f04ef1dfbf4ba712dfd32b456f6791ee31072" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/241e0c5f34b216189f27b179426f6ff927fe2ce5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40944b9e12a1ddda6074cab09e356cf0229929ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89598c6ecb5bf4c7b1602d3f767d32797977ad7d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2cba1ecb6b457ccd4c8a764258ab73550f03e9e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f675d6a3460eaea988214276d5ce5eda0a4f9708" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fec3b422056850e566e5a075b44c489d78c810fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +27,15 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,6 +67,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dzikovskiy" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -80,6 +102,37 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.All in ITS-Task">
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student" />
+      <module name="ITS-Task" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.main" />
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in ITS-Task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <option name="PACKAGE_NAME" value="" />
@@ -122,42 +175,12 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoomControllerTest.getAllRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
-      <option name="METHOD_NAME" value="getAllRooms" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoomControllerTest.getRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
-      <option name="METHOD_NAME" value="getRoom" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
+      <module name="ITS-Task" />
+      <option name="PACKAGE_NAME" value="dzikovskiy" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
@@ -170,16 +193,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.Student" />
+      <item itemvalue="JUnit.All in ITS-Task" />
+      <item itemvalue="JUnit.CountryByIpServiceTest" />
+      <item itemvalue="JUnit.RoomControllerTest.checkRoomAvailabilityByIp" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in ITS-Task" />
+        <item itemvalue="Application.Student" />
+        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.CountryByIpServiceTest" />
         <item itemvalue="JUnit.RoomControllerTest.checkRoomAvailabilityByIp" />
-        <item itemvalue="JUnit.RoomControllerTest.getAllRooms" />
-        <item itemvalue="JUnit.RoomControllerTest.getRoom" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -200,89 +232,27 @@
       <workItem from="1593641281119" duration="11369000" />
       <workItem from="1593687983548" duration="711000" />
       <workItem from="1593688791221" duration="34000" />
+      <workItem from="1596547563898" duration="215000" />
+      <workItem from="1596559732129" duration="112000" />
+      <workItem from="1596712546118" duration="4137000" />
+      <workItem from="1598002827803" duration="452000" />
+      <workItem from="1599928133646" duration="228000" />
+      <workItem from="1602846056039" duration="1277000" />
+      <workItem from="1602851799174" duration="842000" />
+      <workItem from="1605274351471" duration="240000" />
+      <workItem from="1611079530074" duration="754000" />
+      <workItem from="1611080524575" duration="623000" />
+      <workItem from="1615025260822" duration="644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="280" y="4" key="#Project_Structure" timestamp="1593116003758">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="280" y="4" key="#Project_Structure/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116003758" />
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593632237428">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1593632237428" />
-    <state x="881" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1593459133780">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="881" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593459133780" />
-    <state x="918" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593117458891" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593449749560">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1593449749560" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593450564698">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593450564698" />
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1593688695096">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
-    <state width="1557" height="313" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1593688695096">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
-    <state width="1557" height="313" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1593688695096">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
-    <state width="1557" height="313" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515132" />
-    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1593688695096">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593688695096" />
-    <state width="1557" height="313" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593122515133" />
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1593687916540">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593687916540" />
-    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1593687916540">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593687916540" />
-    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1593687916540">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593687916540" />
-    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1593687916540">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593687916540" />
-    <state x="280" y="4" key="SettingsEditor" timestamp="1593116712874">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="280" y="4" key="SettingsEditor/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593116712874" />
-    <state x="548" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593631799871">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="548" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1593631799871" />
-    <state x="571" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1593118968459" />
-    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1593640639403">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1593640639403" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1593688332313">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593688332313" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ITS_Task$All_in_ITS_Task.ic" NAME="All in ITS-Task Coverage Results" MODIFIED="1615025684033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

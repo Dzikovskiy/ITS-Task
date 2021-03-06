@@ -1,0 +1,16 @@
+
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(Ñ±…øÿÿÿÿ
+A
+java:S14528"&Remove usage of generic wildcard type.(ÿš‚øÿÿÿÿ
+A
+java:S1452/"&Remove usage of generic wildcard type.(÷àáµûÿÿÿÿ
+E
+java:S1066!"/Merge this if statement with the enclosing one.(íÛ÷»
+;
+java:S1452"&Remove usage of generic wildcard type.(•´§l
+b
+java:S46848"@Replace this persistent entity with a simple POJO or DTO object.(ÿš‚øÿÿÿÿ8ÖÄ‡ßñ.
+b
+java:S4684H"@Replace this persistent entity with a simple POJO or DTO object.(û‰‚şÿÿÿÿ8ÖÄ‡ßñ.
+–
+java:S1130H"tRemove the declaration of thrown exception 'java.net.URISyntaxException', as it cannot be thrown from method's body.(û‰‚şÿÿÿÿ8ÖÄ‡ßñ.

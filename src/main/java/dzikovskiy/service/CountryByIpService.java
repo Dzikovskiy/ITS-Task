@@ -3,7 +3,6 @@ package dzikovskiy.service;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CountryResponse;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.ClassPathResource;
@@ -17,7 +16,7 @@ import java.net.InetAddress;
 @Service
 public class CountryByIpService {
 
-    private DatabaseReader dbReader;
+    private final DatabaseReader dbReader;
 
     public CountryByIpService() throws IOException {
         InputStream stream = new ClassPathResource("/GeoLite2-Country.mmdb").getInputStream();

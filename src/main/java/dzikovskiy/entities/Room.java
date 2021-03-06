@@ -25,12 +25,12 @@ public class Room {
         return bulbState;
     }
 
-    public void setBulbState(boolean bulbState) {
-        this.bulbState = bulbState;
-    }
-
     public boolean getBulbState() {
         return bulbState;
+    }
+
+    public void setBulbState(boolean bulbState) {
+        this.bulbState = bulbState;
     }
 
     public String getCountryCode() {
@@ -49,7 +49,7 @@ public class Room {
         this.name = name;
     }
 
-    public void changeBulbState(){
+    public void changeBulbState() {
         setBulbState(!bulbState);
     }
 }
