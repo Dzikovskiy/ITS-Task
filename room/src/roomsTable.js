@@ -52,12 +52,13 @@ class RoomsTable extends React.Component {
       isLoggedIn: false,
       id: id,
     });
+    alert(this.state.id);
 
     ky.get(`/api/rooms/${this.state.id}`, { throwHttpErrors: false }).then(
       (response) => {
         if (response.ok) {
           this.setState({ isLoggedIn: true });
-        } else if (response.status == 403) {
+        } else if (response.status === 403) {
           this.setState({ isLoggedIn: false });
           alert("Вы не из этой страны");
         } else {
