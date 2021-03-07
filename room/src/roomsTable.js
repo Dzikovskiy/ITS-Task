@@ -103,7 +103,7 @@ class RoomsTable extends React.Component {
     ));
 
     return (
-      <Container>
+      <Container className="my-4">
         {isLoggedIn ? <Bulb value={this.state.id} /> : <div></div>}
         <h3>Список комнат</h3>
         <Table className="mt-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Form, FormGroup, Input } from "reactstrap";
+import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import CountrySelect from "./countrySelect";
 
 // component with form for creating new room
@@ -24,7 +24,7 @@ class CreateRoomForm extends React.Component {
   async handleSubmit(event) {
     let data = {
       countryCode: this.state.countryCode,
-      name: this.state.roomName,
+      name: this.state.roomName.trim()
     };
     //save room to database with rest api
     fetch("/api/room", {
@@ -44,27 +44,25 @@ class CreateRoomForm extends React.Component {
         <Container maxwidth="sm" className="my-4">
           <Form onSubmit={this.handleSubmit}>
             <FormGroup className="col-md-3 mb-3">
+              <Label for="exampleEmail">Название страны:</Label>
               <CountrySelect
                 value={this.state.countryCode}
                 onChange={this.handleChange}
                 name="countryCode"
               />
-              <label className="mt-4">
-                Название вашей комнаты:
-                <Input
-                  name="roomName"
-                  type="text"
-                  value={this.state.roomName}
-                  onChange={this.handleChange}
-                  required
-                />
-              </label>
-              <Button
-                className="mx-4"
-                variant="contained"
-                color="primary"
-                type="submit"
-              >
+            </FormGroup>
+            <FormGroup className="col-md-3 mb-3">
+              <Label for="exampleEmail">Название вашей комнаты:</Label>
+              <Input
+                name="roomName"
+                type="text"
+                value={this.state.roomName}
+                onChange={this.handleChange}
+                required
+              />
+            </FormGroup>
+            <FormGroup className="col-md-3 mb-3">
+              <Button variant="contained" color="primary" type="submit">
                 Создать команту
               </Button>
             </FormGroup>
