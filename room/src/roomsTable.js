@@ -1,3 +1,4 @@
+import ky from "ky";
 import React from "react";
 import { Button, Container, Table } from "reactstrap";
 import Bulb from "./Bulb";
@@ -8,19 +9,19 @@ class RoomsTable extends React.Component {
     super(props);
     this.state = {
       Rooms: [],
-      ip: "",
+      // ip: "",
       isLoggedIn: false,
       id: 0,
     };
 
     this.enterRoom = this.enterRoom.bind(this);
-    this.getIp = this.getIp.bind(this);
+    // this.getIp = this.getIp.bind(this);
   }
 
   //update available rooms every x-ms froom server
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
-    this.getIp();
+    // this.getIp();
   }
 
   componentWillUnmount() {
@@ -35,49 +36,63 @@ class RoomsTable extends React.Component {
     this.setState({ Rooms: body });
   }
 
-  getIp() {
-    fetch(
-      "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({ ip: data.IPv4 });
-      });
-  }
+  // getIp() {
+  //   fetch(
+  //     "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
+  //   )
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       this.setState({ ip: data.IPv4 });
+  //     });
+  // }
 
   enterRoom(id) {
-    this.getIp();
+    // this.getIp();
     this.setState({
       isLoggedIn: false,
       id: id,
     });
 
-    fetch(`/api/check-room-by-ip/${this.state.ip}/${id}`, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    }).then((response) => {
-      let text = response.text;
-      if (response.ok) {
-        try {
-          const data = JSON.parse(text);
-          console.log(JSON.stringify(data));
-        } catch (err) {
-          console.log("OK");
+    ky.get(`/api/rooms/${this.state.id}`, { throwHttpErrors: false }).then(
+      (response) => {
+        if (response.ok) {
           this.setState({ isLoggedIn: true });
-        }
-      } else {
-        this.setState({ isLoggedIn: false });
-        try {
-          const data = JSON.parse(text);
-          console.log(JSON.stringify(data));
-        } catch (err) {
+        } else if (response.status == 403) {
+          this.setState({ isLoggedIn: false });
           alert("Вы не из этой страны");
+        } else {
+          this.setState({ isLoggedIn: false });
+          alert("room not found");
         }
       }
-    });
+    );
+
+    // fetch(`/api/check-room-by-ip/${this.state.ip}/${id}`, {
+    //   method: "GET",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json",
+    //   },
+    // }).then((response) => {
+    //   let text = response.text;
+    //   if (response.ok) {
+    //     try {
+    //       const data = JSON.parse(text);
+    //       console.log(JSON.stringify(data));
+    //     } catch (err) {
+    //       console.log("OK");
+    //       this.setState({ isLoggedIn: true });
+    //     }
+    //   } else {
+    //     this.setState({ isLoggedIn: false });
+    //     try {
+    //       const data = JSON.parse(text);
+    //       console.log(JSON.stringify(data));
+    //     } catch (err) {
+    //       alert("Вы не из этой страны");
+    //     }
+    //   }
+    // });
   }
 
   render() {

@@ -35,18 +35,18 @@ public class RoomController {
     private RoomService roomService;
 
     //check country of client and of a room that he want to enter, if same return HttpStatus OK
-    @GetMapping("/check-room-by-ip/{ip}/{id}")
-    public ResponseEntity<String> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
-        Optional<Room> room = roomRepository.findById(id);
-        System.out.println(ip);
-        if (room.isPresent()) {
-            if (room.get().getCountryCode().equals(countryByIpService.getCountryIsoCode(ip))) {
-                return new ResponseEntity<>(HttpStatus.OK);
-            }
-        }
-       // System.out.println(ip + " " + id + " " + countryByIpService.getCountryIsoCode(ip));
-        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
-    }
+//    @GetMapping("/check-room-by-ip/{ip}/{id}")
+//    public ResponseEntity<String> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
+//        Optional<Room> room = roomRepository.findById(id);
+//        System.out.println(ip);
+//        if (room.isPresent()) {
+//            if (room.get().getCountryCode().equals(countryByIpService.getCountryIsoCode(ip))) {
+//                return new ResponseEntity<>(HttpStatus.OK);
+//            }
+//        }
+//        // System.out.println(ip + " " + id + " " + countryByIpService.getCountryIsoCode(ip));
+//        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+//    }
 
     @GetMapping("/rooms")
     public Collection<Room> getAllRooms() {
@@ -55,13 +55,31 @@ public class RoomController {
 
     @GetMapping("/rooms/{id}")
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
-        System.out.println(request.getHeader("X-FORWARDED-FOR")+ "one");
-        System.out.println(request.getRemoteAddr()+"two");
-        System.out.println(requestService.getClientIp(request)+" three");
-
         Optional<Room> room = roomService.findById(id);
-        return room.map(response -> ResponseEntity.ok().body(response))
-                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        if (!room.isPresent()) {
+            System.out.println("room not found");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        try {
+            if (countryByIpService.getCountryIsoCode(requestService.getClientIp(request)).equalsIgnoreCase(room.get().getCountryCode())) {
+                Room roomFromOptional = room.get();
+                System.out.println("room found for ip " + requestService.getClientIp(request));
+                return ResponseEntity.ok().body(roomFromOptional);
+            } else {
+                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request));
+                return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+            }
+
+        } catch (IOException | GeoIp2Exception e) {
+            e.printStackTrace();
+        }
+
+//        System.out.println(request.getHeader("X-FORWARDED-FOR") + "one");
+//        System.out.println(request.getRemoteAddr() + "two");
+//        System.out.println(requestService.getClientIp(request) + " three");
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     //rest controller that accepts bulb state from server and set it to accepted room
