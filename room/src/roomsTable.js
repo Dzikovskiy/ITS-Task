@@ -46,11 +46,11 @@ class RoomsTable extends React.Component {
   //     });
   // }
 
-  enterRoom(id) {
+  enterRoom(roomId) {
     // this.getIp();
     this.setState({
       isLoggedIn: false,
-      id: id,
+      id: roomId,
     });
     alert(this.state.id);
 

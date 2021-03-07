@@ -57,17 +57,17 @@ public class RoomController {
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
         Optional<Room> room = roomService.findById(id);
         if (!room.isPresent()) {
-            System.out.println("room not found");
+            System.out.println("room not found with id "+id);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         try {
             if (countryByIpService.getCountryIsoCode(requestService.getClientIp(request)).equalsIgnoreCase(room.get().getCountryCode())) {
                 Room roomFromOptional = room.get();
-                System.out.println("room found for ip " + requestService.getClientIp(request));
+                System.out.println("room found for ip " + requestService.getClientIp(request)+" id:"+id);
                 return ResponseEntity.ok().body(roomFromOptional);
             } else {
-                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request));
+                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request)+" id:"+id);
                 return new ResponseEntity<>(HttpStatus.FORBIDDEN);
             }
 
