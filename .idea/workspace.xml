@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/room/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/180f04ef1dfbf4ba712dfd32b456f6791ee31072" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89598c6ecb5bf4c7b1602d3f767d32797977ad7d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2cba1ecb6b457ccd4c8a764258ab73550f03e9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fec3b422056850e566e5a075b44c489d78c810fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/room/src/Bulb.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/Bulb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/countrySelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/countrySelect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/room/src/createRoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/createRoomForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/src/roomsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/roomsTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +80,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5463917" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="Lombok" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -101,7 +106,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CountryByIpServiceTest.getCountryIsoCode">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Student" />
       <module name="ITS-Task" />
@@ -122,13 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,14 +205,14 @@
       <item itemvalue="Application.Student" />
       <item itemvalue="JUnit.All in ITS-Task" />
       <item itemvalue="JUnit.CountryByIpServiceTest" />
-      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in ITS-Task" />
         <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
         <item itemvalue="JUnit.CountryByIpServiceTest" />
-        <item itemvalue="JUnit.All in ITS-Task" />
         <item itemvalue="Application.Student" />
         <item itemvalue="Application.main" />
       </list>
@@ -242,7 +249,8 @@
       <workItem from="1605274351471" duration="240000" />
       <workItem from="1611079530074" duration="754000" />
       <workItem from="1611080524575" duration="623000" />
-      <workItem from="1615025260822" duration="9630000" />
+      <workItem from="1615025260822" duration="10856000" />
+      <workItem from="1615118425285" duration="486000" />
     </task>
     <servers />
   </component>
@@ -251,6 +259,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ITS_Task$All_in_ITS_Task.ic" NAME="All in ITS-Task Coverage Results" MODIFIED="1615025684033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

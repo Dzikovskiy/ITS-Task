@@ -41,7 +41,7 @@ class CreateRoomForm extends React.Component {
   render() {
     return (
       <div>
-        <Container maxWidth="sm" className="my-4">
+        <Container maxwidth="sm" className="my-4">
           <Form onSubmit={this.handleSubmit}>
             <FormGroup className="col-md-3 mb-3">
               <CountrySelect

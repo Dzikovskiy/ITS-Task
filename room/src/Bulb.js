@@ -91,7 +91,7 @@ class Bulb extends React.Component {
   render() {
     return (
       <div>
-        <Container maxWidth="sm" className="my-4">
+        <Container maxwidth="sm" className="my-4">
           <div style={{ border: "4px solid black" }}>
             <i
               className="material-icons"

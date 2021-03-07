@@ -59,7 +59,7 @@ public class RoomController {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        roomToSave.setBulbState(room.getBulbState());
+        roomToSave.setBulbState(room.isBulbState());
         Room result = roomRepository.save(roomToSave);
 
         return ResponseEntity.ok().body(result);
