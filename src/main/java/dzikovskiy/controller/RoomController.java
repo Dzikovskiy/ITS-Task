@@ -38,6 +38,7 @@ public class RoomController {
     @GetMapping("/check-room-by-ip/{ip}/{id}")
     public ResponseEntity<String> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
         Optional<Room> room = roomRepository.findById(id);
+        System.out.println(ip);
         if (room.isPresent()) {
             if (room.get().getCountryCode().equals(countryByIpService.getCountryIsoCode(ip))) {
                 return new ResponseEntity<>(HttpStatus.OK);

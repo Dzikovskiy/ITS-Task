@@ -28,16 +28,9 @@ class CreateRoomForm extends React.Component {
       name: this.state.roomName.trim(),
     };
 
-    await ky.post("/api/rooms", { json: data });
     //save room to database with rest api
-    // fetch("/api/rooms", {
-    //   method: "POST",
-    //   body: JSON.stringify(data),
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //   },
-    // });
+    await ky.post("/api/rooms", { json: data });
+
     event.preventDefault();
   }
 

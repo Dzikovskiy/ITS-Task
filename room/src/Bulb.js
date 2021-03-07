@@ -1,3 +1,4 @@
+import ky from "ky";
 import React from "react";
 import { Button, Container } from "reactstrap";
 import "./Bulb.css";
@@ -10,6 +11,8 @@ class Bulb extends React.Component {
     this.state = {
       id: props.value,
       isOn: false,
+      countryCode: "",
+      name: "",
     };
 
     // This binding is necessary to make `this` work in the callback
@@ -38,54 +41,32 @@ class Bulb extends React.Component {
 
   // getting bulb state from server
   async tick() {
-    fetch(`/api/rooms/${this.state.id}`, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
+    ky.get(`/api/rooms/${this.state.id}`).json()
       .then((data) => {
-        this.setState({ isOn: data.bulbState });
+        this.setState({
+          isOn: data.bulbState,
+          name: data.name,
+          countryCode: data.countryCode,
+        });
       });
   }
 
   //update bulb state on server after button click
-  updateBulbStateOnServer() {
+  async updateBulbStateOnServer() {
     let data = {
       id: this.state.id,
       bulbState: this.state.isOn,
+      name: this.state.name,
+      countryCode: this.state.countryCode,
     };
 
     //save new bulb state to database with rest api
-    fetch(`/api/rooms/${this.state.id}`, {
-      method: "PUT",
-      body: JSON.stringify(data),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    }).then((response) => {
-      let text = response.text;
-      if (response.ok) {
-        try {
-          const data = JSON.parse(text);
-          console.log(JSON.stringify(data));
-          // JSON handling here
-        } catch (err) {
-          // It is text
-          console.log("OK");
-        }
-      } else {
-        try {
-          const data = JSON.parse(text);
-          console.log(JSON.stringify(data));
-        } catch (err) {
-          console.log("Not found");
-        }
-      }
+    let response = await ky.put(`/api/rooms/${this.state.id}`, {
+      json: data,
+      throwHttpErrors: false,
     });
+
+    console.log("response.status = ", response.status);
   }
 
   render() {
