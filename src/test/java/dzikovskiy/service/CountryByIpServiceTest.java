@@ -14,7 +14,7 @@ class CountryByIpServiceTest {
         CountryByIpService countryByIpService = new CountryByIpService();
         String ip = "77.111.246.6";
         String ip2 = "77.111.246.6";
-        String ip3 = "46.216.58.219";
+        String ip3 = "46.216.38.234";
         String countryCode = "US";
         String countryCode2 = "ZZ";
         String countryCode3 = "BY";

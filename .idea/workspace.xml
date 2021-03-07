@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/room/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/room/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/Bulb.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/Bulb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/countrySelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/countrySelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/createRoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/createRoomForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/src/roomsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/room/src/roomsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +101,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.CountryByIpServiceTest.getCountryIsoCode">
     <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Student" />
       <module name="ITS-Task" />
@@ -151,17 +158,17 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoomControllerTest.checkRoomAvailabilityByIp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountryByIpServiceTest.getCountryIsoCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dzikovskiy.controller.*" />
+          <option name="PATTERN" value="dzikovskiy.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
-      <option name="METHOD_NAME" value="checkRoomAvailabilityByIp" />
+      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="METHOD_NAME" value="getCountryIsoCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,16 +198,16 @@
       <item itemvalue="Application.Student" />
       <item itemvalue="JUnit.All in ITS-Task" />
       <item itemvalue="JUnit.CountryByIpServiceTest" />
-      <item itemvalue="JUnit.RoomControllerTest.checkRoomAvailabilityByIp" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
+        <item itemvalue="JUnit.CountryByIpServiceTest" />
         <item itemvalue="JUnit.All in ITS-Task" />
         <item itemvalue="Application.Student" />
         <item itemvalue="Application.main" />
-        <item itemvalue="JUnit.CountryByIpServiceTest" />
-        <item itemvalue="JUnit.RoomControllerTest.checkRoomAvailabilityByIp" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +242,7 @@
       <workItem from="1605274351471" duration="240000" />
       <workItem from="1611079530074" duration="754000" />
       <workItem from="1611080524575" duration="623000" />
-      <workItem from="1615025260822" duration="5007000" />
+      <workItem from="1615025260822" duration="9630000" />
     </task>
     <servers />
   </component>

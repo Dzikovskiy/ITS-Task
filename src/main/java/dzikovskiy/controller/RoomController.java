@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -48,13 +47,11 @@ public class RoomController {
         Optional<Room> room = roomRepository.findById(id);
         return room.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
-
     }
 
     //rest controller that accepts bulb state from server and set it to accepted room
     @PutMapping("/room/{id}")
     public ResponseEntity<?> changeBulbState(@RequestBody Room room) {
-
         Optional<Room> optionalRoom = roomRepository.findById(room.getId());
         Room roomToSave;
         if (optionalRoom.isPresent()) {
@@ -69,7 +66,7 @@ public class RoomController {
     }
 
     @PostMapping("/room")
-    public ResponseEntity<Room> createRoom(@RequestBody Room room) throws URISyntaxException {
+    public ResponseEntity<Room> createRoom(@RequestBody Room room) {
         Room result = roomRepository.save(room);
         return ResponseEntity.ok().body(result);
     }
