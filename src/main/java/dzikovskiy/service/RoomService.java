@@ -31,6 +31,8 @@ public class RoomService {
 
         roomToSave = roomFromDb.get();
         roomToSave.setBulbState(room.isBulbState());
+        roomToSave.setName(room.getName());
+        roomToSave.setCountryCode(room.getCountryCode());
         roomToSave = roomRepository.save(roomToSave);
 
         return Optional.of(roomToSave);

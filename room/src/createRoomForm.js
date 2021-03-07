@@ -27,7 +27,7 @@ class CreateRoomForm extends React.Component {
       name: this.state.roomName.trim()
     };
     //save room to database with rest api
-    fetch("/api/room", {
+    fetch("/api/rooms", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

@@ -52,7 +52,7 @@ public class RoomController {
         return roomService.findAll();
     }
 
-    @GetMapping("/room/{id}")
+    @GetMapping("/rooms/{id}")
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
         System.out.println(request.getHeader("X-FORWARDED-FOR")+ "one");
         System.out.println(request.getRemoteAddr()+"two");
@@ -64,7 +64,7 @@ public class RoomController {
     }
 
     //rest controller that accepts bulb state from server and set it to accepted room
-    @PutMapping("/room/{id}")
+    @PutMapping("/rooms/{id}")
     public ResponseEntity<Room> updateRoom(@RequestBody Room room) {
         Optional<Room> roomFromDb = roomService.update(room);
         if (!roomFromDb.isPresent()) {
@@ -74,7 +74,7 @@ public class RoomController {
         return ResponseEntity.ok().body(roomFromDb.get());
     }
 
-    @PostMapping("/room")
+    @PostMapping("/rooms")
     public ResponseEntity<Room> createRoom(@RequestBody Room room) {
         Room result = roomService.save(room);
         URI location = URI.create(String.format("/room/%s", result.getId()));

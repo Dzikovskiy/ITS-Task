@@ -38,7 +38,7 @@ class Bulb extends React.Component {
 
   // getting bulb state from server
   async tick() {
-    fetch(`/api/room/${this.state.id}`, {
+    fetch(`/api/rooms/${this.state.id}`, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -59,7 +59,7 @@ class Bulb extends React.Component {
     };
 
     //save new bulb state to database with rest api
-    fetch(`/api/room/${this.state.id}`, {
+    fetch(`/api/rooms/${this.state.id}`, {
       method: "PUT",
       body: JSON.stringify(data),
       headers: {
