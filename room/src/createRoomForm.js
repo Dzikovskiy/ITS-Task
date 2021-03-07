@@ -1,4 +1,5 @@
 import React from "react";
+import ky from "ky";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import CountrySelect from "./countrySelect";
 
@@ -24,17 +25,19 @@ class CreateRoomForm extends React.Component {
   async handleSubmit(event) {
     let data = {
       countryCode: this.state.countryCode,
-      name: this.state.roomName.trim()
+      name: this.state.roomName.trim(),
     };
+
+    await ky.post("/api/rooms", { json: data });
     //save room to database with rest api
-    fetch("/api/rooms", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
+    // fetch("/api/rooms", {
+    //   method: "POST",
+    //   body: JSON.stringify(data),
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json",
+    //   },
+    // });
     event.preventDefault();
   }
 
