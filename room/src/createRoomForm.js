@@ -25,10 +25,10 @@ class CreateRoomForm extends React.Component {
   async handleSubmit(event) {
     let data = {
       countryCode: this.state.countryCode,
-      name: this.state.roomName.trim(),
+      name: this.state.roomName.trim()
     };
 
-    //save room to database with rest api
+    //save room to database with post request
     await ky.post("/api/rooms", { json: data });
 
     event.preventDefault();

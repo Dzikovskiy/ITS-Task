@@ -41,7 +41,8 @@ class Bulb extends React.Component {
 
   // getting bulb state from server
   async tick() {
-    ky.get(`/api/rooms/${this.state.id}`).json()
+    ky.get(`/api/rooms/${this.state.id}`)
+      .json()
       .then((data) => {
         this.setState({
           isOn: data.bulbState,

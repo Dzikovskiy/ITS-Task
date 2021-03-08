@@ -2,7 +2,6 @@ package dzikovskiy.controller;
 
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import dzikovskiy.entities.Room;
-import dzikovskiy.repository.RoomRepository;
 import dzikovskiy.service.CountryByIpService;
 import dzikovskiy.service.RequestService;
 import dzikovskiy.service.RoomService;
@@ -23,9 +22,6 @@ import java.util.Optional;
 public class RoomController {
 
     @Autowired
-    private RoomRepository roomRepository;
-
-    @Autowired
     private CountryByIpService countryByIpService;
 
     @Autowired
@@ -33,20 +29,6 @@ public class RoomController {
 
     @Autowired
     private RoomService roomService;
-
-    //check country of client and of a room that he want to enter, if same return HttpStatus OK
-//    @GetMapping("/check-room-by-ip/{ip}/{id}")
-//    public ResponseEntity<String> checkRoomAvailabilityByIp(@PathVariable("ip") String ip, @PathVariable("id") Long id) throws IOException, GeoIp2Exception {
-//        Optional<Room> room = roomRepository.findById(id);
-//        System.out.println(ip);
-//        if (room.isPresent()) {
-//            if (room.get().getCountryCode().equals(countryByIpService.getCountryIsoCode(ip))) {
-//                return new ResponseEntity<>(HttpStatus.OK);
-//            }
-//        }
-//        // System.out.println(ip + " " + id + " " + countryByIpService.getCountryIsoCode(ip));
-//        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
-//    }
 
     @GetMapping("/rooms")
     public Collection<Room> getAllRooms() {
@@ -57,17 +39,17 @@ public class RoomController {
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
         Optional<Room> room = roomService.findById(id);
         if (!room.isPresent()) {
-            System.out.println("room not found with id "+id);
+            System.out.println("room not found with id " + id);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         try {
             if (countryByIpService.getCountryIsoCode(requestService.getClientIp(request)).equalsIgnoreCase(room.get().getCountryCode())) {
                 Room roomFromOptional = room.get();
-                System.out.println("room found for ip " + requestService.getClientIp(request)+" id:"+id);
+                System.out.println("room found for ip " + requestService.getClientIp(request) + " id:" + id);
                 return ResponseEntity.ok().body(roomFromOptional);
             } else {
-                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request)+" id:"+id);
+                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request) + " id:" + id);
                 return new ResponseEntity<>(HttpStatus.FORBIDDEN);
             }
 
