@@ -46,13 +46,18 @@ class RoomsTable extends React.Component {
   //     });
   // }
 
-  enterRoom(roomId) {
+ async enterRoom(roomId) {
     // this.getIp();
-    this.setState({
+   await this.setState({
       isLoggedIn: false,
-      id: roomId,
+      id: roomId
     });
-    alert(this.state.id);
+
+   // this.state.id = roomId;
+
+
+    alert("id in state: "+this.state.id);
+    alert("roomId "+roomId);
 
     ky.get(`/api/rooms/${this.state.id}`, { throwHttpErrors: false }).then(
       (response) => {
