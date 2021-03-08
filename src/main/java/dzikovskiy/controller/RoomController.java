@@ -5,6 +5,9 @@ import dzikovskiy.entities.Room;
 import dzikovskiy.service.CountryByIpService;
 import dzikovskiy.service.RequestService;
 import dzikovskiy.service.RoomService;
+import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +22,10 @@ import java.util.Optional;
 @CrossOrigin(origins = {"http://localhost:3000"})
 @RestController
 @RequestMapping("/api")
+@Log4j2
 public class RoomController {
+
+    private final Logger logger = LogManager.getLogger();
 
     @Autowired
     private CountryByIpService countryByIpService;
@@ -37,48 +43,53 @@ public class RoomController {
 
     @GetMapping("/rooms/{id}")
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
+        final String clientIp = requestService.getClientIp(request);
         Optional<Room> room = roomService.findById(id);
+        log.debug("Method getRoom() called with id: " + id + " ip:" + clientIp);
+
         if (!room.isPresent()) {
-            System.out.println("room not found with id " + id);
+            log.debug("Room not found with id: " + id);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         try {
-            if (countryByIpService.getCountryIsoCode(requestService.getClientIp(request)).equalsIgnoreCase(room.get().getCountryCode())) {
+            if (countryByIpService.getCountryIsoCode(clientIp).equalsIgnoreCase(room.get().getCountryCode())) {
                 Room roomFromOptional = room.get();
-                System.out.println("room found for ip " + requestService.getClientIp(request) + " id:" + id);
+                log.debug("Room found for ip: " + clientIp + " with id:" + id);
                 return ResponseEntity.ok().body(roomFromOptional);
             } else {
-                System.out.println("room enter forbidden for ip " + requestService.getClientIp(request) + " id:" + id);
+                log.debug("Room enter forbidden for ip: " + clientIp + " and id:" + id);
                 return new ResponseEntity<>(HttpStatus.FORBIDDEN);
             }
-
-        } catch (IOException | GeoIp2Exception e) {
-            e.printStackTrace();
+        } catch (GeoIp2Exception e) {
+            log.error("Caught GeoIp2Exception exception with given ip: " + clientIp + "\n" + e);
+        } catch (IOException e) {
+            log.error("Caught IO exception in getRoom() " + e);
         }
-
-//        System.out.println(request.getHeader("X-FORWARDED-FOR") + "one");
-//        System.out.println(request.getRemoteAddr() + "two");
-//        System.out.println(requestService.getClientIp(request) + " three");
 
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    //rest controller that accepts bulb state from server and set it to accepted room
     @PutMapping("/rooms/{id}")
     public ResponseEntity<Room> updateRoom(@RequestBody Room room) {
+        log.debug("Method updateRoom() called with room: " + room);
         Optional<Room> roomFromDb = roomService.update(room);
         if (!roomFromDb.isPresent()) {
+            log.debug("Room with id: " + room.getId() + " not found in database");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+        log.debug("Returned room: " + roomFromDb.get());
         return ResponseEntity.ok().body(roomFromDb.get());
     }
 
     @PostMapping("/rooms")
     public ResponseEntity<Room> createRoom(@RequestBody Room room) {
+        log.debug("Method createRoom() called with room: " + room);
         Room result = roomService.save(room);
         URI location = URI.create(String.format("/room/%s", result.getId()));
+
+        log.debug("Returned response with location: " + location + " and saved room: " + result);
         return ResponseEntity.created(location).body(result);
     }
 }

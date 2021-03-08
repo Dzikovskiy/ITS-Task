@@ -1,5 +1,6 @@
 package dzikovskiy.service;
 
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -8,13 +9,14 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @Service
+@Log4j2
 public class RequestService {
 
     private final String LOCALHOST_IPV4 = "127.0.0.1";
     private final String LOCALHOST_IPV6 = "0:0:0:0:0:0:0:1";
 
-
     public String getClientIp(HttpServletRequest request) {
+        log.debug("Method getClientIp() called with request: " + request);
         String ipAddress = request.getHeader("X-Forwarded-For");
         if (StringUtils.isEmpty(ipAddress) || "unknown".equalsIgnoreCase(ipAddress)) {
             ipAddress = request.getHeader("Proxy-Client-IP");
@@ -31,7 +33,7 @@ public class RequestService {
                     InetAddress inetAddress = InetAddress.getLocalHost();
                     ipAddress = inetAddress.getHostAddress();
                 } catch (UnknownHostException e) {
-                    e.printStackTrace();
+                    log.error("Caught UnknownHostException exception in getClientIp() " + e);
                 }
             }
         }
@@ -44,5 +46,4 @@ public class RequestService {
 
         return ipAddress;
     }
-
 }
