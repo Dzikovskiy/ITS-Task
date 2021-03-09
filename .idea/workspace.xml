@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +263,7 @@
       <workItem from="1615118425285" duration="23730000" />
       <workItem from="1615193437200" duration="14207000" />
       <workItem from="1615316321965" duration="4714000" />
-      <workItem from="1615321168868" duration="2872000" />
+      <workItem from="1615321168868" duration="3700000" />
     </task>
     <servers />
   </component>
