@@ -20,3 +20,11 @@ Y
 )src/main/java/dzikovskiy/Application.java,a\e\aeefdb340cd9e4816a836e5bac657feeb9161f7b
 [
 +src/main/java/dzikovskiy/entities/Room.java,0\0\000623f770dbad3ccb3258c79a15e76891035202
+F
+room/src/roomsTable.js,2\f\2f3b413f25fdc4cbc23b3aabe28a4aa84c86494f
+@
+room/src/Bulb.js,9\d\9de1bfca6ba9da38ccd22517efb896f69ab5738e
+d
+4src/main/java/dzikovskiy/service/RequestService.java,4\9\4905a9587d43992d150cf54a414b31d9cca219d7
+a
+1src/main/java/dzikovskiy/service/RoomService.java,b\d\bd865ce09478f40ea459f75897bc56acafcac4d6

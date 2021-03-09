@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/RequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/service/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,17 +111,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -241,7 +226,7 @@
       <workItem from="1611080524575" duration="623000" />
       <workItem from="1615025260822" duration="10856000" />
       <workItem from="1615118425285" duration="23730000" />
-      <workItem from="1615193437200" duration="12871000" />
+      <workItem from="1615193437200" duration="14207000" />
     </task>
     <servers />
   </component>

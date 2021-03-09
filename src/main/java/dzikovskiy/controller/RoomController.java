@@ -25,8 +25,6 @@ import java.util.Optional;
 @Log4j2
 public class RoomController {
 
-    private final Logger logger = LogManager.getLogger();
-
     @Autowired
     private CountryByIpService countryByIpService;
 
@@ -45,7 +43,7 @@ public class RoomController {
     public ResponseEntity<Room> getRoom(@PathVariable Long id, HttpServletRequest request) {
         final String clientIp = requestService.getClientIp(request);
         Optional<Room> room = roomService.findById(id);
-        log.debug("Method getRoom() called with id: " + id + " ip:" + clientIp);
+        log.debug("Method getRoom() called with room id: " + id + "and client ip:" + clientIp);
 
         if (!room.isPresent()) {
             log.debug("Room not found with id: " + id);
@@ -55,10 +53,10 @@ public class RoomController {
         try {
             if (countryByIpService.getCountryIsoCode(clientIp).equalsIgnoreCase(room.get().getCountryCode())) {
                 Room roomFromOptional = room.get();
-                log.debug("Room found for ip: " + clientIp + " with id:" + id);
+                log.debug("Room found for ip: " + clientIp + " with room id:" + id);
                 return ResponseEntity.ok().body(roomFromOptional);
             } else {
-                log.debug("Room enter forbidden for ip: " + clientIp + " and id:" + id);
+                log.debug("Room enter forbidden for ip: " + clientIp + " and room id:" + id);
                 return new ResponseEntity<>(HttpStatus.FORBIDDEN);
             }
         } catch (GeoIp2Exception e) {
