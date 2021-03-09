@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,34 +95,18 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Student" />
-      <module name="ITS-Task" />
+  <component name="RunManager" selected="JUnit.CountryByIpServiceTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.main" />
-      <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in ITS-Task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITS-Task" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="CountryByIpServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -134,13 +119,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="dzikovskiy.service" />
       <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryByIpServiceTest.getCountryIsoCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +136,58 @@
       </extension>
       <option name="PACKAGE_NAME" value="dzikovskiy.service" />
       <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
-      <option name="METHOD_NAME" value="getCountryIsoCode" />
+      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForEmptyInputs(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForNullInputs(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,20 +213,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.main" />
-      <item itemvalue="Application.Student" />
-      <item itemvalue="JUnit.All in ITS-Task" />
-      <item itemvalue="JUnit.CountryByIpServiceTest" />
-      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" />
+      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" />
+      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" />
+      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" />
+      <item itemvalue="JUnit.CountryByIpServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ITS-Task" />
-        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode" />
         <item itemvalue="JUnit.CountryByIpServiceTest" />
-        <item itemvalue="Application.Student" />
-        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" />
+        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" />
+        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" />
+        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +264,7 @@
       <workItem from="1615025260822" duration="10856000" />
       <workItem from="1615118425285" duration="23730000" />
       <workItem from="1615193437200" duration="14207000" />
+      <workItem from="1615316321965" duration="4426000" />
     </task>
     <servers />
   </component>
