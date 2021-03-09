@@ -15,7 +15,4 @@ public class Room {
     private String countryCode;
     private String name;
 
-    public void changeBulbState() {
-        setBulbState(!bulbState);
-    }
 }

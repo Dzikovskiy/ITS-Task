@@ -6,9 +6,6 @@ import dzikovskiy.service.CountryByIpService;
 import dzikovskiy.service.RequestService;
 import dzikovskiy.service.RoomService;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,20 +16,23 @@ import java.net.URI;
 import java.util.Collection;
 import java.util.Optional;
 
-@CrossOrigin(origins = {"http://localhost:3000"})
+
 @RestController
 @RequestMapping("/api")
 @Log4j2
 public class RoomController {
 
-    @Autowired
-    private CountryByIpService countryByIpService;
+    private final CountryByIpService countryByIpService;
 
-    @Autowired
-    private RequestService requestService;
+    private final RequestService requestService;
 
-    @Autowired
-    private RoomService roomService;
+    private final RoomService roomService;
+
+    public RoomController(CountryByIpService countryByIpService, RequestService requestService, RoomService roomService) {
+        this.countryByIpService = countryByIpService;
+        this.requestService = requestService;
+        this.roomService = roomService;
+    }
 
     @GetMapping("/rooms")
     public Collection<Room> getAllRooms() {

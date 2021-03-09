@@ -5,7 +5,9 @@ import com.maxmind.geoip2.exception.GeoIp2Exception;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.*;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -36,7 +38,7 @@ class CountryByIpServiceTest {
     void getCountryIsoCode_ShouldGenerateTheExpectedCountryCodeNegativeTest(String ip, String countryCode) throws IOException, GeoIp2Exception {
         assertNotEquals(countryCode, countryByIpService.getCountryIsoCode(ip));
     }
-    
+
 
     @ParameterizedTest
     @ValueSource(strings = {"127.0.0.1"})

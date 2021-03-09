@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2154d5d4e5042c387abb37d19e8451a8f207cbc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/CountryByIpServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,16 +99,14 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CountryByIpServiceTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,12 +215,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" />
       <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" />
       <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" />
       <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" />
       <item itemvalue="JUnit.CountryByIpServiceTest" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
@@ -264,7 +266,8 @@
       <workItem from="1615025260822" duration="10856000" />
       <workItem from="1615118425285" duration="23730000" />
       <workItem from="1615193437200" duration="14207000" />
-      <workItem from="1615316321965" duration="4426000" />
+      <workItem from="1615316321965" duration="4714000" />
+      <workItem from="1615321168868" duration="2872000" />
     </task>
     <servers />
   </component>
@@ -280,5 +283,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ITS_Task$All_in_ITS_Task.ic" NAME="All in ITS-Task Coverage Results" MODIFIED="1615025684033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ITS_Task$CountryByIpServiceTest.ic" NAME="CountryByIpServiceTest Coverage Results" MODIFIED="1615324035353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dzikovskiy.service.*</FILTER>
+    </SUITE>
   </component>
 </project>
