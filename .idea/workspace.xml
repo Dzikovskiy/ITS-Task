@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/config/WebConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +259,7 @@
       <workItem from="1615118425285" duration="23730000" />
       <workItem from="1615193437200" duration="14207000" />
       <workItem from="1615316321965" duration="4714000" />
-      <workItem from="1615321168868" duration="4065000" />
+      <workItem from="1615321168868" duration="4435000" />
     </task>
     <servers />
   </component>
