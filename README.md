@@ -15,5 +15,6 @@ After that steps application should start and you can acces it on **http://local
 
 
 *   Note:
+*   > If you are running the program on localhost you won't be able to use some of the function because of localhost ip. In that case you need to install https://ngrok.com and write *ngrok http 8080* to get public address for app
 *   
     > In some cases (if you need to edit the code and rebuild the project) may be need to install Node.js https://nodejs.org/en/
