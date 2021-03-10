@@ -1,7 +1,9 @@
 # ITS-Task
- Application is website where you can create room with country selector and give name to it. After room creation you can enter that room if you from room country and turn on/off bulb inside of it. 
+ Application is a website where you can create room with the country selector and give name to it. After room creation you can enter that room if you from room country and turn on/off bulb inside of it. 
  
 All rooms is saving to database and every room state change shown in real time.
+
+Link to demo: https://rooms-bulb.herokuapp.com
 
 ### How to run app
 
@@ -9,7 +11,7 @@ All rooms is saving to database and every room state change shown in real time.
 * In terminal change working directory with **cd**
 * Enter **java -jar ITS-Task-1.0-SNAPSHOT.jar** 
 
-After that steps application should start and you can acces it on **http://localhost:8080**
+After that steps application should start and you can access it on **http://localhost:8080**
 
 
 
