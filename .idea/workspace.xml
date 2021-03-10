@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/controller/RoomControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/controller/RoomControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITS-Task-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITS-Task-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,17 +95,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.All in ITS-Task">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in ITS-Task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <option name="PACKAGE_NAME" value="" />
@@ -204,12 +193,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="JUnit.RoomServiceTest" />
       <item itemvalue="JUnit.RoomControllerTest.getRoomsReturnsRoom" />
       <item itemvalue="JUnit.RoomControllerTest.getRoomsNotReturnsRoomWithNotCountryIp" />
       <item itemvalue="JUnit.RoomControllerTest.getRoomsReturnsRoomWithCountryIp" />
       <item itemvalue="JUnit.All in ITS-Task" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
@@ -257,6 +246,7 @@
       <workItem from="1615193437200" duration="14207000" />
       <workItem from="1615316321965" duration="4714000" />
       <workItem from="1615321168868" duration="13956000" />
+      <workItem from="1615339914576" duration="198000" />
     </task>
     <servers />
   </component>
