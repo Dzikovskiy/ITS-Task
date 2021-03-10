@@ -28,3 +28,5 @@ d
 4src/main/java/dzikovskiy/service/RequestService.java,4\9\4905a9587d43992d150cf54a414b31d9cca219d7
 a
 1src/main/java/dzikovskiy/service/RoomService.java,b\d\bd865ce09478f40ea459f75897bc56acafcac4d6
+^
+.src/main/java/dzikovskiy/config/WebConfig.java,8\c\8c3aafd575b1efec2d47e607b55c8cc2b0e9fd61

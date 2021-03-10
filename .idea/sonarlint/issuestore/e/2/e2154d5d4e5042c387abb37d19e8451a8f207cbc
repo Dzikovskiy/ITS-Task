@@ -1,10 +1,5 @@
 
-]
-java:S1128	"@Remove this unused import 'org.apache.logging.log4j.LogManager'.(Ë”Ëé8ç¶ÿš/
-^
-java:S1128
-"<Remove this unused import 'org.apache.logging.log4j.Logger'.(»¯øÿÿÿÿ8ç¶ÿš/
 b
-java:S4684U"@Replace this persistent entity with a simple POJO or DTO object.(´Êöûÿÿÿÿ8±§®™/
+java:S4684T"@Replace this persistent entity with a simple POJO or DTO object.(´Êöûÿÿÿÿ8±§®™/
 b
-java:S4684H"@Replace this persistent entity with a simple POJO or DTO object.(·¹Ìµûÿÿÿÿ8±§®™/
+java:S4684G"@Replace this persistent entity with a simple POJO or DTO object.(·¹Ìµûÿÿÿÿ8±§®™/
