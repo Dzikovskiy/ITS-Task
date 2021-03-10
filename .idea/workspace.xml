@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="" />
+    <list default="true" id="cd4a2aea-8025-4171-ba18-e96a8495ea17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/service/RoomServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dzikovskiy/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/controller/RoomControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/controller/RoomControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dzikovskiy/repository/RoomRepositoryIntegrationTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -79,9 +86,9 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dzikovskiy.service" />
       <recent name="dzikovskiy.Repository" />
       <recent name="dzikovskiy.controller" />
-      <recent name="dzikovskiy.service" />
       <recent name="dzikovskiy" />
     </key>
   </component>
@@ -91,7 +98,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.RoomServiceTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -103,16 +110,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryByIpServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in ITS-Task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomControllerTest.updateRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dzikovskiy.service.*" />
+          <option name="PATTERN" value="dzikovskiy.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
+      <option name="PACKAGE_NAME" value="dzikovskiy.controller" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.controller.RoomControllerTest" />
+      <option name="METHOD_NAME" value="updateRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomRepositoryIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITS-Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dzikovskiy.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dzikovskiy.repository" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.repository.RoomRepositoryIntegrationTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -120,7 +155,7 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
@@ -129,15 +164,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dzikovskiy.service" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
-      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForEmptyInputs(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.RoomServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITS-Task" />
       <extension name="coverage">
         <pattern>
@@ -146,42 +181,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dzikovskiy.service" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
-      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
-      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowExceptionForNullInputs(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITS-Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dzikovskiy.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dzikovskiy.service" />
-      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.CountryByIpServiceTest" />
-      <option name="METHOD_NAME" value="getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="dzikovskiy.service.RoomServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,20 +208,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" />
-      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" />
-      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" />
-      <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" />
-      <item itemvalue="JUnit.CountryByIpServiceTest" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.RoomRepositoryIntegrationTest" />
+      <item itemvalue="JUnit.RoomControllerTest.updateRoom" />
+      <item itemvalue="JUnit.All in ITS-Task" />
+      <item itemvalue="JUnit.RoomServiceTest.findById" />
+      <item itemvalue="JUnit.RoomServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CountryByIpServiceTest" />
-        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullAndEmptyInputs" />
-        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForNullInputs" />
-        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowGeoIp2ExceptionForIpThatNotInDb" />
-        <item itemvalue="JUnit.CountryByIpServiceTest.getCountryIsoCode_ShouldThrowExceptionForEmptyInputs" />
+        <item itemvalue="JUnit.RoomServiceTest" />
+        <item itemvalue="JUnit.RoomRepositoryIntegrationTest" />
+        <item itemvalue="JUnit.RoomServiceTest.findById" />
+        <item itemvalue="JUnit.All in ITS-Task" />
+        <item itemvalue="JUnit.RoomControllerTest.updateRoom" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +260,7 @@
       <workItem from="1615118425285" duration="23730000" />
       <workItem from="1615193437200" duration="14207000" />
       <workItem from="1615316321965" duration="4714000" />
-      <workItem from="1615321168868" duration="4435000" />
+      <workItem from="1615321168868" duration="11728000" />
     </task>
     <servers />
   </component>
@@ -274,7 +275,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ITS_Task$All_in_ITS_Task.ic" NAME="All in ITS-Task Coverage Results" MODIFIED="1615025684033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ITS_Task$All_in_ITS_Task.ic" NAME="All in ITS-Task Coverage Results" MODIFIED="1615334397975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ITS_Task$CountryByIpServiceTest.ic" NAME="CountryByIpServiceTest Coverage Results" MODIFIED="1615324035353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dzikovskiy.service.*</FILTER>
     </SUITE>

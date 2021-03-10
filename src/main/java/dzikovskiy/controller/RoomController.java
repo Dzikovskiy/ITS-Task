@@ -16,7 +16,6 @@ import java.net.URI;
 import java.util.Collection;
 import java.util.Optional;
 
-//@CrossOrigin(origins = {"http://localhost:3000"})
 @RestController
 @RequestMapping("/api")
 @Log4j2

@@ -23,7 +23,7 @@ class RoomRepositoryIntegrationTest {
     private RoomRepository roomRepository;
 
     @Test
-    public void whenFindById_ReturnRoom() {
+    void whenFindById_ReturnRoom() {
         // given
         Room room = new Room();
         Room room2 = new Room();
