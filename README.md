@@ -15,6 +15,5 @@ After that steps application should start and you can acces it on **http://local
 
 
 *   Note:
-    > Application is tested on Chrome and Edge without adblock. If adblock works, it may cause frontend errors.
-    
+*   
     > In some cases (if you need to edit the code and rebuild the project) may be need to install Node.js https://nodejs.org/en/
