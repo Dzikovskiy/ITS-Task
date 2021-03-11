@@ -6,5 +6,6 @@
 /target/surefire-reports/
 /target/test-classes/
 /target/ITS-Task-1.0-SNAPSHOT.jar.original
-/.idea/
+.idea/*
 .idea/sonarlint/
+
