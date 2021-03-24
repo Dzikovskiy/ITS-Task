@@ -9,3 +9,6 @@
 .idea/*
 .idea/sonarlint/
 
+/.settings/
+/ITS-Task.iml
+/.project
