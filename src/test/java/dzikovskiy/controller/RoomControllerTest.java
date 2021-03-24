@@ -11,21 +11,17 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.RequestPostProcessor;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Optional;
 
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.internal.util.MockUtil.createMock;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -74,14 +70,17 @@ class RoomControllerTest {
         room.setBulbState(false);
         room.setId(1L);
 
-        HttpServletRequest req =  Mockito.mock(HttpServletRequest.class);
+        HttpServletRequest req = Mockito.mock(HttpServletRequest.class);
 
         given(req.getHeader("X-Forwarded-For")).willReturn("46.216.38.234");
 
         given(roomController.getRoom(room.getId(), req)).willReturn(ResponseEntity.ok().body(room));
 
         mvc.perform(get("/api/rooms/1")
-                .contentType(APPLICATION_JSON).with(request->{request.setRemoteAddr("46.216.38.234");return request;}))
+                .contentType(APPLICATION_JSON).with(request -> {
+                    request.setRemoteAddr("46.216.38.234");
+                    return request;
+                }))
                 .andExpect(status().isOk());
     }
 
